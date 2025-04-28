@@ -12,7 +12,7 @@ import seaborn as sns
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:/sem 6/cloud cat-2/dataset CAT II.csv")
+    df = pd.read_csv("dataset CAT II.csv")
     return df
 
 def split_data(df):
@@ -23,11 +23,11 @@ def split_data(df):
 
 def home_page():
     st.title("Diabetes Risk Management using Machine Learning")
-    st.image("C:/sem 6/cloud cat-2/home.jpg", caption="Manage your diabetes risk effectively", use_column_width=True)
+    st.image("home.jpg", caption="Manage your diabetes risk effectively", use_column_width=True)
 
 def introduction_page():
     st.title("Introduction to Diabetes")
-    st.image("C:/sem 6/cloud cat-2/Introduction.jpg", caption="Understanding Diabetes", use_column_width=True)
+    st.image("Introduction.jpg", caption="Understanding Diabetes", use_column_width=True)
     
     st.write(""" 
     Diabetes is a chronic medical condition that affects how the body processes blood glucose (or blood sugar), the primary source of energy for cells. In diabetes, either the body does not produce enough insulin, a hormone responsible for regulating blood sugar, or the body cannot effectively use the insulin it produces. This leads to elevated levels of glucose in the blood, which can cause serious health problems over time, including damage to the eyes, kidneys, nerves, and heart.
@@ -198,7 +198,7 @@ def feedback_page():
         return
 
     st.write("## Provide your feedback")
-    st.image("C:/sem 6/cloud cat-2/feedback_image.jpg", caption="We value your feedback!", use_column_width=True)
+    st.image("feedback_image.jpg", caption="We value your feedback!", use_column_width=True)
 
     feedback = st.text_area("Enter your feedback")
 
